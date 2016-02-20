@@ -122,14 +122,64 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxV-KN-4df">
+                                <rect key="frame" x="369" y="250" width="100" height="100"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EC0-uV-dDk">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JT8-6v-ybZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Tra-Oy-Fw9">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="KS6-8s-D2Q">
+                                                        <rect key="frame" x="25" y="25" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="AJ1-FB-RFS"/>
+                                                            <constraint firstAttribute="width" constant="50" id="fa3-Cr-Uxl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="KS6-8s-D2Q" firstAttribute="centerY" secondItem="Tra-Oy-Fw9" secondAttribute="centerY" id="m5S-EG-tma"/>
+                                                    <constraint firstItem="KS6-8s-D2Q" firstAttribute="centerX" secondItem="Tra-Oy-Fw9" secondAttribute="centerX" id="r3G-qG-Vmc"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="extraLight"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JT8-6v-ybZ" firstAttribute="top" secondItem="EC0-uV-dDk" secondAttribute="top" id="1ie-SN-96W"/>
+                                        <constraint firstAttribute="trailing" secondItem="JT8-6v-ybZ" secondAttribute="trailing" id="DLa-BP-342"/>
+                                        <constraint firstAttribute="bottom" secondItem="JT8-6v-ybZ" secondAttribute="bottom" id="F9b-wB-6um"/>
+                                        <constraint firstItem="JT8-6v-ybZ" firstAttribute="leading" secondItem="EC0-uV-dDk" secondAttribute="leading" id="ITr-Vt-6RE"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iKj-PW-qVt"/>
+                                    <constraint firstAttribute="width" constant="100" id="mva-NO-Vnv"/>
+                                </constraints>
+                                <blurEffect style="extraLight"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LEp-Ux-l2R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="115" id="0lM-Lf-gBn"/>
                             <constraint firstItem="LEp-Ux-l2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7MZ-xc-m8u"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hTE-YA-9yU" secondAttribute="bottom" id="9Dg-GK-o19"/>
+                            <constraint firstItem="PxV-KN-4df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="119" id="EYa-FZ-qPU"/>
                             <constraint firstAttribute="trailing" secondItem="hTE-YA-9yU" secondAttribute="trailing" id="bAb-io-SjR"/>
                             <constraint firstItem="hTE-YA-9yU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bIf-2S-Iup"/>
+                            <constraint firstItem="PxV-KN-4df" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ij0-iS-n0D"/>
                             <constraint firstItem="ETB-Mi-TE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-89" id="lm7-ow-uJV"/>
                             <constraint firstItem="ETB-Mi-TE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyM-lA-2UB"/>
                             <constraint firstItem="hTE-YA-9yU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oMe-h0-VhB"/>
