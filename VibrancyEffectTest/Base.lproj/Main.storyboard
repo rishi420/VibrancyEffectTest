@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hTE-YA-9yU">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hTE-YA-9yU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETB-Mi-TE6">
@@ -122,6 +122,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tnJ-Gx-bYa">
+                                <rect key="frame" x="389" y="270" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1aB-Yj-WXB"/>
+                                    <constraint firstAttribute="width" constant="60" id="1aw-So-bHQ"/>
+                                </constraints>
+                            </imageView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxV-KN-4df">
                                 <rect key="frame" x="369" y="250" width="100" height="100"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EC0-uV-dDk">
@@ -161,7 +169,9 @@
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="iKj-PW-qVt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kGb-ze-8pF"/>
                                     <constraint firstAttribute="width" constant="100" id="mva-NO-Vnv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="zCr-gh-oDF"/>
                                 </constraints>
                                 <blurEffect style="extraLight"/>
                                 <userDefinedRuntimeAttributes>
@@ -171,18 +181,22 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LEp-Ux-l2R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="115" id="0lM-Lf-gBn"/>
                             <constraint firstItem="LEp-Ux-l2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7MZ-xc-m8u"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hTE-YA-9yU" secondAttribute="bottom" id="9Dg-GK-o19"/>
+                            <constraint firstItem="tnJ-Gx-bYa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DCf-c3-UqR"/>
                             <constraint firstItem="PxV-KN-4df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="119" id="EYa-FZ-qPU"/>
+                            <constraint firstItem="PxV-KN-4df" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QXo-tz-vsS"/>
                             <constraint firstAttribute="trailing" secondItem="hTE-YA-9yU" secondAttribute="trailing" id="bAb-io-SjR"/>
                             <constraint firstItem="hTE-YA-9yU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bIf-2S-Iup"/>
                             <constraint firstItem="PxV-KN-4df" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ij0-iS-n0D"/>
                             <constraint firstItem="ETB-Mi-TE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-89" id="lm7-ow-uJV"/>
                             <constraint firstItem="ETB-Mi-TE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyM-lA-2UB"/>
                             <constraint firstItem="hTE-YA-9yU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oMe-h0-VhB"/>
+                            <constraint firstItem="tnJ-Gx-bYa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="119" id="xJm-wo-a7h"/>
+                            <constraint firstItem="PxV-KN-4df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="119" id="ycU-QY-uSn"/>
                         </constraints>
                     </view>
                 </viewController>
